@@ -3,7 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.0.0",
+    "dk_test_names": "^1.1.0",
     "react": "^16.6.3",
+    "react-bootstrap-table-next": "^1.4.1",
+    "react-bootstrap-table2-filter": "^1.1.0",
+    "react-bootstrap-table2-paginator": "^1.0.4",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1"
   },
@@ -11,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "backend": "node data/makeData",
+    "postbackend": "json-server --watch data/db.json --port 1234"
   },
   "eslintConfig": {
     "extends": "react-app"
